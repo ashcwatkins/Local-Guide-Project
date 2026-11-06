@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Sniglet", system-ui;
+  color: #333;
+  background-color: rgb(249, 246, 231);
+  color: rgb(1, 58, 1);
+  line-height: 1.6;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  padding: 0px 0px 30px;
+}
+
+.almendra-regular {
+  font-family: "Almendra", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sniglet-regular {
+  font-family: "Sniglet", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(28, 138, 190);
+}
+
+/* Header */
+.header {
+  font-family: "Almendra", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  padding: 30px;
+  width: 100%;
+}
+
+.header-image {
+  display: flex;
+  background-image: linear-gradient(rgba(255, 253, 253, 0.65)), url('https://savorytraveler.com/wp-content/uploads/2023/04/1920x1080.jpg');
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header2 {
+  font-family: "Almendra", serif;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 22px;
+  padding: 50px 0px 0px 200px;
+  width: 100%;
+}
+
+.man-menu {
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  color: black;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px 200px 0px;
+}
+
+/* Main Content */
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 30px 20px 30px;
+  color: black;
+}
+
+.text-container {
+  font-size: 24px;
+  background-color: rgb(193, 224, 152);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px 200px 0px;
+  outline-color: aliceblue;
+
+  .hour {
+    font-size: 25px;
+    display: flex;
+    justify-content: end;
+    color: green;
+  }
+
+  .info {
+    font-size: 20px;
+    display: flex;
+    justify-content: end;
+  }
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  gap: 30px;
+}
+
+.menu-item {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.raleigh-city,
+.fair,
+.mansion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 50%;
+
+}
+
+.city,
+.party,
+.house {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.state-fair,
+.executive-mansion,
+.theatre-little,
+.pope-house,
+.pullen-park,
+.juniper-level {
+  display: block;
+  width: 45%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  padding: 0px 0;
+  flex-shrink: 0;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  line-height: 1.6;
+  padding: 40px 100px;
+  margin: 10px 0px;
+  color: black;
+}
+
+
+/* Media Queries */
+@media (max-width: 900px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    padding: 30px 10px 10px;
+    font-size: 15px;
+  }
+
+  .header-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+
+  .header2 {
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px 0px;
+    font-size: 15px;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .man-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    font-size: 10px;
+    padding: 10px 20px 0px;
+  }
+
+  .intro {
+    display: flex;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    min-width: 100%;
+    height: auto;
+
+    .hour {
+      font-size: 15px;
+      display: flex;
+      justify-content: end;
+      color: green;
+    }
+
+    .info {
+      font-size: 13px;
+      display: flex;
+      justify-content: end;
+    }
+  }
+
+  .text-container {
+    padding: 10px 20px;
+    margin: 0px 20px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 900px) {
+
+    .state-fair,
+    .executive-mansion,
+    .theatre-little,
+    .pope-house,
+    .pullen-park,
+    .juniper-level {
+      width: 100%;
+    }
+  }
+
+  .juniper-level,
+  .executive-mansion,
+  .theatre-little,
+  .pope-house,
+  .state-fair,
+  .pullen-park {
+    display: block;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    padding: 10px 20px 10px;
+  }
+
+  .intro {
+    display: flex;
+    padding: 10px 20px 10px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 900px) {
+
+    .raleigh-city,
+    .fair,
+    .mansion {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      min-width: 95px;
+      height: auto;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: center;
+    padding: 0px;
+  }
+
+  .menu-item {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+  }
+}
