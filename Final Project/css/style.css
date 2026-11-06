@@ -7,9 +7,8 @@
 
 body {
   font-family: "Sniglet", system-ui;
-  color: #333;
   background-color: rgb(249, 246, 231);
-  color: rgb(1, 58, 1);
+  color: var(--primary-color);
   line-height: 1.6;
   width: 100%;
   height: auto;
@@ -29,12 +28,16 @@ body {
   font-style: normal;
 }
 
+:root {
+  --primary-color: rgb(1, 58, 1)
+}
+
 ul {
   list-style-type: none;
 }
 
 a {
-  color: #333;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -71,6 +74,7 @@ a:hover {
   font-size: 22px;
   padding: 50px 0px 0px 200px;
   width: 100%;
+  color: var(--primary-color);
 }
 
 .man-menu {
@@ -80,7 +84,6 @@ a:hover {
   gap: 20px;
   padding: 20px;
   justify-content: center;
-  color: black;
 }
 
 .menu {
@@ -98,7 +101,6 @@ a:hover {
   font-size: 18px;
   line-height: 1.6;
   padding: 30px 20px 30px;
-  color: black;
 }
 
 .text-container {
