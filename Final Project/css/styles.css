@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: rgb(249, 246, 231);
+  color: rgb(1, 58, 1);
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding: 30px;
+  background-color: green;
+  width: 100%;
+
+  @media (max-width: 900px) {
+    background-color: goldenrod;
+    color: gold;
+  }
+}
+
+.header2 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 22px;
+  padding: 0px 0px 0px 100px;
+  width: 100%;
+
+  @media (max-width: 900px) {
+    color: gold;
+  }
+}
+
+.main-menu {
+  display: flex;
+  font-size: 25px;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fffefe;
+  justify-content: center;
+  color: black;
+}
+
+
+/* Main Content */
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 30px 80px 330px;
+  color: black;
+}
+
+.text-container {
+  font-size: 24px;
+  background-color: rgb(254, 255, 254);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: start;
+  padding: 0 80px;
+}
+
+.raleigh-city {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.state-fair,
+.executive-mansion,
+.theatre-little,
+.pope-house,
+.pullen-park,
+.juniper-level {
+  display: block;
+  width: 45%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.intro {
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 40px 100px;
+  color: black;
+  background-color: rgb(254, 255, 254);
+}
+
+
+/* Media Queries */
+@media (max-width: 900px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    padding: 30px 10px 10px;
+    font-size: 15px;
+
+    @media (max-width: 900px) {
+      background-color: goldenrod;
+    }
+  }
+
+  .header2 {
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px 0px;
+    font-size: 15px;
+
+    @media (max-width: 900px) {
+      color: gold;
+    }
+  }
+
+  .main-menu {
+    flex-direction: row;
+    font-size: 16px;
+  }
+
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    min-width: 100%;
+    height: auto;
+  }
+
+  .text-container {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 900px) {
+  .state-fair,
+  .executive-mansion,
+  .theatre-little,
+  .pope-house,
+  .pullen-park,
+  .juniper-level {
+    width: 100%;
+  }
+}
+
+  .juniper-level,
+  .executive-mansion,
+  .theatre-little,
+  .pope-house,
+  .state-fair,
+  .pullen-park {
+    display: block;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    padding: 10px 20px 10px;
+  }
+
+  .intro {
+    display: flex;
+    padding: 10px 20px 10px;
+    font-size: 14px;
+  }
+}
